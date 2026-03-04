@@ -52,3 +52,20 @@ anche dotati di id "first-paragraph", e tali elementi nel mio documento non esis
     FIGLI del p con id "first-paragraph */
   font-size: 50em;
 }
+
+#colored {
+  color: rgba(200, 50, 100, 0.8);
+}
+
+/* SELETTORE DISCENDENZA (generico) */
+section span {
+  /* tutti gli span figli A QUALSIASI LIVELLO delle section (figli, nipoti, pronipoti etc.) */
+  /* font-size: 50em; */
+}
+
+/* SELETTORE DISCENDENZA DIRETTA (solo figli diretti) */
+
+section > span {
+  /* non selezionerebbe niente nella mia pagina */
+  font-size: 50em; /* non sta funzionando */
+}
