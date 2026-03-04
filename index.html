@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primi esperimenti con CSS</title>
+    <!-- b) -->
+    <style>
+      /* 
+            qui dentro è già necessaria della vera e propria sintassi CSS!
+        */
+      /* le regole CSS si dichiarano con --> SELETTORE { REGOLE } */
+      /* una REGOLA è fatta da --> PROPRIETÀ: VALORE */
+      /* SELETTORI: vi servono a IDENTIFICARE e SELEZIONARE porzioni di contenuto */
+      /* il selettore più base è il SELETTORE DI TAG */
+      p {
+        /* andiamo a modificare qualche proprietà tipografica */
+        font-size: 1.3em; /* 30% più grande del valore che normalmente avrebbe */
+        /* ho provato a mettere il testo in grassetto ma fa schifo; lo lascio comunque come memo ma la disattivo */
+        /* font-weight: bold; */ /* <-- testo in grassetto */
+        /* text-decoration: underline; */ /* <-- testo sottolineato */
+        font-style: italic; /* <-- corsivo */
+      }
+    </style>
+    <!-- c) tag <link> che collega a questo documento un foglio di stile esterno -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gioie e dolori di CSS</h1>
+    </header>
+    <main>
+      <section>
+        <!-- Oggi ripassiamo le basi di CSS! -->
+        <!-- Il linguaggio CSS serve per applicare degli stili visivi alle parti di documento
+          definite con l'HTML. -->
+        <!-- Posso applicare il CSS in 3 modi:
+         a) CSS INLINE -> comodo, però poco riutilizzabile e con specificità particolare
+         b) CSS INCORPORATO -> più ordinato, però si applica ad un solo documento HTML
+         c) CSS ESTERNO -> il più consigliato, il più riutilizzabile, non tocchiamo l'HTML
+         -->
+        <!-- a) -->
+        <h3 style="color: red">Creiamo qualche paragrafo</h3>
+        <p>
+          Questo è un primo paragrafo: Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Dignissimos facilis laborum exercitationem sunt
+          omnis beatae voluptatum minima cumque obcaecati, nisi, molestiae,
+          excepturi quis nam modi odio autem consequuntur minus corporis?
+          Dignissimos facilis laborum exercitationem sunt omnis beatae
+          voluptatum minima cumque obcaecati, nisi, molestiae, excepturi quis
+          nam modi odio autem consequuntur minus corporis? Dignissimos facilis
+          laborum exercitationem sunt omnis beatae voluptatum minima cumque
+          obcaecati, nisi, molestiae, excepturi quis nam modi odio autem
+          consequuntur minus corporis?
+        </p>
+        <p>
+          Questo è un secondo paragrafo: Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Dignissimos facilis laborum exercitationem sunt
+          omnis beatae voluptatum minima cumque obcaecati, nisi, molestiae,
+          excepturi quis nam modi odio autem consequuntur minus corporis?
+          Dignissimos facilis laborum exercitationem sunt omnis beatae
+          voluptatum minima cumque obcaecati, nisi, molestiae, excepturi quis
+          nam modi odio autem consequuntur minus corporis? Dignissimos facilis
+          laborum exercitationem sunt omnis beatae voluptatum minima cumque
+          obcaecati, nisi, molestiae, excepturi quis nam modi odio autem
+          consequuntur minus corporis?
+        </p>
+      </section>
+      <section>
+        <h3>Qualche lista</h3>
+        <ol>
+          <li>Primo posto: pizza</li>
+          <li>Secondo posto: baguette</li>
+          <li>Terzo posto: wurstel</li>
+        </ol>
+        <ul>
+          <li>Pane</li>
+          <li>Latte</li>
+          <li>Yoghurt</li>
+          <li>Scaloppine</li>
+          <li>Nutella</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Qualche immagine</h3>
+        <div>
+          <img src="https://placecats.com/400/400" alt="kitten picture" />
+        </div>
+        <div>
+          <img src="https://placedog.net/400/400" alt="doggo picture" />
+        </div>
+        <div>
+          <img src="https://placebear.com/400/400" alt="teddy picture" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>EPICODE - 2026</p>
+    </footer>
+  </body>
+</html>
