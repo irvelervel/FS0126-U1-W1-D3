@@ -13,6 +13,7 @@
       /* una REGOLA è fatta da --> PROPRIETÀ: VALORE */
       /* SELETTORI: vi servono a IDENTIFICARE e SELEZIONARE porzioni di contenuto */
       /* il selettore più base è il SELETTORE DI TAG */
+      /* scrivendo un selettore p voi selezionate TUTTI i <p> nel documento! */
       p {
         /* andiamo a modificare qualche proprietà tipografica */
         font-size: 1.3em; /* 30% più grande del valore che normalmente avrebbe */
@@ -41,28 +42,31 @@
          -->
         <!-- a) -->
         <h3 style="color: red">Creiamo qualche paragrafo</h3>
-        <p>
+        <p id="first-paragraph">
           Questo è un primo paragrafo: Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Dignissimos facilis laborum exercitationem sunt
-          omnis beatae voluptatum minima cumque obcaecati, nisi, molestiae,
-          excepturi quis nam modi odio autem consequuntur minus corporis?
-          Dignissimos facilis laborum exercitationem sunt omnis beatae
-          voluptatum minima cumque obcaecati, nisi, molestiae, excepturi quis
-          nam modi odio autem consequuntur minus corporis? Dignissimos facilis
-          laborum exercitationem sunt omnis beatae voluptatum minima cumque
-          obcaecati, nisi, molestiae, excepturi quis nam modi odio autem
-          consequuntur minus corporis?
+          adipisicing elit.
+          <span class="text-yellow">Dignissimos facilis laborum</span>
+          exercitationem sunt omnis beatae voluptatum minima cumque obcaecati,
+          nisi, molestiae, excepturi quis nam modi odio autem consequuntur minus
+          corporis? Dignissimos facilis laborum exercitationem sunt omnis beatae
+          voluptatum minima cumque obcaecati, nisi, molestiae,
+          <span class="text-yellow">excepturi quis</span> nam modi odio autem
+          consequuntur minus corporis? Dignissimos facilis laborum
+          exercitationem sunt omnis beatae voluptatum minima cumque obcaecati,
+          nisi, molestiae, excepturi quis nam modi odio autem consequuntur minus
+          corporis?
         </p>
         <p>
           Questo è un secondo paragrafo: Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Dignissimos facilis laborum exercitationem sunt
           omnis beatae voluptatum minima cumque obcaecati, nisi, molestiae,
           excepturi quis nam modi odio autem consequuntur minus corporis?
-          Dignissimos facilis laborum exercitationem sunt omnis beatae
-          voluptatum minima cumque obcaecati, nisi, molestiae, excepturi quis
-          nam modi odio autem consequuntur minus corporis? Dignissimos facilis
-          laborum exercitationem sunt omnis beatae voluptatum minima cumque
-          obcaecati, nisi, molestiae, excepturi quis nam modi odio autem
+          Dignissimos facilis
+          <span class="text-yellow">laborum exercitationem sunt</span> omnis
+          beatae voluptatum minima cumque obcaecati, nisi, molestiae, excepturi
+          quis nam modi odio autem consequuntur minus corporis? Dignissimos
+          facilis laborum exercitationem sunt omnis beatae voluptatum minima
+          cumque obcaecati, nisi, molestiae, excepturi quis nam modi odio autem
           consequuntur minus corporis?
         </p>
       </section>
@@ -70,13 +74,13 @@
         <h3>Qualche lista</h3>
         <ol>
           <li>Primo posto: pizza</li>
-          <li>Secondo posto: baguette</li>
+          <li id="special-li">Secondo posto: baguette</li>
           <li>Terzo posto: wurstel</li>
         </ol>
         <ul>
-          <li>Pane</li>
-          <li>Latte</li>
-          <li>Yoghurt</li>
+          <li class="spesa-li">Pane</li>
+          <li class="spesa-li">Latte</li>
+          <li class="spesa-li">Yoghurt</li>
           <li>Scaloppine</li>
           <li>Nutella</li>
         </ul>

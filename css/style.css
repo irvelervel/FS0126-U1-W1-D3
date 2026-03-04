@@ -1,4 +1,54 @@
 /* c) questo è un vero e proprio foglio di stile separato e riutilizzabile */
+
+/* voglio che tutte le liste abbiano un margine a sinistra di 1em */
+/* quindi combino due selettori di tag, ol e ul con la VIRGOLA */
+ul,
+ol {
+  margin-left: 1em;
+}
+
+/* il selettore di ID ha "SPECIFICITÀ" più alta del selettore di TAG */
+#special-li {
+  color: blue;
+}
+
+/* selettore di CLASSE: permette di "etichettare" più elementi nella pagina con la stessa parola */
+/* il selettore di CLASSE ha "SPECIFICITA" di 10, una via di mezzo tra gli ID e i TAG */
+.spesa-li {
+  font-weight: bold;
+}
+
+li {
+  color: red;
+}
+
 li {
   color: green;
+}
+
+/* SPECIFICITÀ DEI SELETTORI DI TAG: 1 */
+/* SPECIFICITÀ DEI SELETTORI DI CLASSE: 10 */
+/* SPECIFICITÀ DEI SELETTORI DI ID: 100 */
+
+.text-yellow {
+  font-weight: bold;
+  color: rgb(203, 203, 36);
+}
+
+/* SELETTORE DI DISCENDENZA (carattere spazio) */
+#first-paragraph .text-yellow {
+  /* andrò ad applicare la sottolineatura SOLO agli elementi con class "text-yellow" che sono
+    FIGLI del p con id "first-paragraph */
+  text-decoration: underline;
+}
+
+/* se a quel selettore avessi tolto lo spazio, non avrei sottolineato un fico secco! perchè sarebbe
+diventato un selettore per elementi dotati di classe "text-yellow" che CONTEMPORANEAMENTE sarebbero
+anche dotati di id "first-paragraph", e tali elementi nel mio documento non esistono! */
+
+/* SELETTORE DI "CONCOMITANZA" :) */
+#first-paragraph.text-yellow {
+  /* andrò ad applicare la sottolineatura SOLO agli elementi con class "text-yellow" che sono
+    FIGLI del p con id "first-paragraph */
+  font-size: 50em;
 }
